@@ -1,0 +1,20 @@
+{
+  "name": "parchiis",
+  "version": "1.0.0",
+  "description": "juego de parques con poderes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "parchis",
+    "parques",
+    "juego",
+    "phaser"
+  ],
+  "author": "Daniel Valbuena",
+  "license": "MIT",
+  "dependencies": {
+    "phaser": "^3.22.0"
+  }
+}
