@@ -49,7 +49,8 @@ class BoardScene extends Phaser.Scene {
         this.left2 = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.A);
         this.up2 = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.W);
         this.down2 = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.S);
-        this.index = 6;
+        //Cambiar para que funcione el "= 6"
+        this.index = 5;
 
     }
 
