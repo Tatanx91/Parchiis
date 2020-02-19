@@ -4,6 +4,7 @@ import Dice from '../gameObjects/Dice.js';
 import Piece from '../gameObjects/Piece.js';
 import Board from '../gameObjects/Board.js';
 import FaceDice from '../gameObjects/FaceDice.js';
+import Player from '../gameObjects/Player.js';
 
 class BoardScene extends Phaser.Scene {
 
@@ -16,6 +17,9 @@ class BoardScene extends Phaser.Scene {
         // Board
         let board = new Board(this, 300, 300, 'board');//this.add.sprite(300, 300, 'board');
         this.twoDice = true;
+
+        let player = new player();
+        this.player.create();
         
         //players
         this.red = new Piece(this, data[39].posx, data[39].posy, 'red');//this.add.sprite(236, 137, 'red');
@@ -50,7 +54,7 @@ class BoardScene extends Phaser.Scene {
         this.up2 = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.W);
         this.down2 = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.S);
         //Cambiar para que funcione el "= 6"
-        this.index = 5;
+        this.index = 6;
 
     }
 
@@ -79,7 +83,7 @@ class BoardScene extends Phaser.Scene {
         document.getElementById('spnX2').innerText = "Y pos x = " + this.yellow.x;
         document.getElementById('spnY2').innerText = "Y pos y = " + this.yellow.y;
         
-        OperationsLogic.executeMoves(this.yellow, this);
+        //OperationsLogic.executeMoves(this.yellow, this);
         OperationsLogic.executeMoves(this.yellow, this);
 
     }
