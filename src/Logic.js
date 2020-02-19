@@ -1,6 +1,7 @@
 import data from './Boardbox.js';
 
 const operationsLogic = {
+	//Prueba github
     executeMoves: (currentPiece, game) => {
         //executeMove
         if(game.movement){
